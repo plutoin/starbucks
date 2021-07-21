@@ -60,10 +60,10 @@ new Swiper('.promotion .swiper-container', {
   // direction: horizontal 기본값
   slidesPerView: 3, // 한 번에 보여 준 슬라이드 개수
   spaceBetween: 10, // 슬라이드 사이 여백, 10px
-  centeredSlides: true, // 1번 슬라이드가
+  centeredSlides: true, // 1번 슬라이드가 중간에 오도록
   loop: true,
   autoplay: {
-    delay: 5000  // 5s
+    delay: 5000  // 5s와 같음
   },
   pagination: {
     el: '.promotion .swiper-pagination',  // 페이지 번호 요소 선택자
@@ -103,10 +103,10 @@ function floatingObject(selector, delay, size) {
     random(1.5, 2.5), // 애니메이션 동작 시간
     {
       delay: random(0, delay), // 얼마나 늦게 애니메이션을 시작할 것인지 지연 시간을 설정
-      y: size, // `transform: translateY(수치);`와 같음. 수직으로 얼마나 움직일지 설정
+      y: size, // `transform: translateY(수치);`와 같음 수직으로 얼마나 움직일지 설정
       repeat: -1, // -1은 무한 반복
       yoyo: true, // 한번 재생된 애니메이션을 다시 뒤로 재생
-      ease: Power1.easeInOut // Easing 함수 적용.
+      ease: Power1.easeInOut // Easing 함수 적용
     }
   )
 }
