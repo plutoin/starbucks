@@ -54,8 +54,7 @@ new Swiper('.notice-line .swiper-container', {
 - 유튜브 동영상 제어 가능 라이브러리
 - `onYouTubePlayerAPIReady` 은 Youtube IFrame Player API에서 사용하는 이름이기 때문에 다르게 지정하면 동작하지 않음
 - 함수는 전역 등록
-
-[iframe 삽입에 대한 YouTube Player API 참조 문서 | YouTube IFrame Player API](https://developers.google.com/youtube/iframe_api_reference?hl=ko)
+- [YouTube IFrame Player API](https://developers.google.com/youtube/iframe_api_reference?hl=ko)
 
 ```html
 <!-- HEAD -->
