@@ -1,31 +1,33 @@
+
 # ☕️ starbucks
 - 스타벅스 홈페이지 클론 코딩
-- 구현 시작일: 2021.07.11
-- 구현 완료일: 2021.07.24
+	- 구현 시작일: 2021.07.11
+	- 구현 완료일: 2021.07.24
 - [Open Page](https://plutoin.github.io/starbucks/)  
 
 
 ## ✔️ Libraries
 
-### 1️. **reset css**
+### 1️. reset css
 - css 설정 모두 초기화(뷰포트에 기본적으로 지정되어 있는 margin 값 등의 제거 위함)
 - reset.min.css에서 html 코드 복사
 - min 파일은 다량의 데이터를 압축한 것이므로 일반 reset.css 파일보다 주로 사용
-- [reset-css CDN by jsDelivr - A CDN for npm and GitHub](https://www.jsdelivr.com/package/npm/reset-css)
+- [reset-css CDN](https://www.jsdelivr.com/package/npm/reset-css)
 
-### 2️. **material icons**
+### 2️. material icons
+- 구글에서 제공하는 머터리얼 아이콘
+- [Google Fonts](https://fonts.google.com/icons)
 
-+ [Google Fonts](https://fonts.google.com/icons)
-
-### 3️. **gsap easing**
+### 3️. gsap easing
 - 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리
 - 애니메이션의 진행이 매끄럽도록 함
 - [Docs](https://greensock.com/docs/v2/Easing)
 
-### 4️. **Swiper**
+### 4️. Swiper
 - 스와이퍼(슬라이드) 라이브러리
 - css 파일과 js 파일 라이브러리 모두 필요
-- [Getting Started With Swiper](https://swiperjs.com/get-started)
+- [Getting Started with Swiper](https://swiperjs.com/get-started)
+- [Swiper API](https://swiperjs.com/swiper-api)
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -70,18 +72,24 @@ new Swiper('.notice-line .swiper-container', {
 #### ✔️  같은 클래스 이름의 태그 여러 개 만들 때
 - .클래스 이름 * 개수 > 자식 클래스
 
+#
+
 ```html
 <!-- hero 클래스 안에 image 클래스가 포함된 div 태그 32개 만들려고 할 때 -->
 .hero*32>.image
 ```
 
+#
+
 #### ✔️ a 태그 링크
-- a 태그에 링크 삽입 시 링크가 아직 준비되지 않은 경우 javascript:void(0) 혹은 # 사용
-  → 전자를 저 권장, #은 실행 시 페이지에 변화가 있을 수 있음
+- a 태그에 링크 삽입 시 링크가 아직 준비되지 않은 경우 `javascript:void(0)` 혹은 `#` 사용
+- 전자를 더 권장, #은 실행 시 페이지에 변화가 있을 수 있음
 
 ```html
 <a href="javascript:void(0)">예시</a>
 ```
+
+#
 
 #### ✔️ Open Graph
 - 웹 페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정
@@ -95,27 +103,31 @@ new Swiper('.notice-line .swiper-container', {
 <meta property="og:url" content="https://starbucks.co.kr" />
 ```
 
-- `og:type`: 페이지의 유형(E.g, `website`, `video.movie`)
+- `og:type`: 페이지의 유형(E.g, `website`, `video.movie`)
 - `og:site_name`: 속한 사이트의 이름
 - `og:title`: 페이지의 이름(제목)
 - `og:description`: 페이지의 간단한 설명
 - `og:image`: 페이지의 대표 이미지 주소(URL)
 - `og:url`: 페이지 주소(URL)
 
+#
+
 #### ✔️ Favicon
 - 웹 페이지를 나타내는 아이콘이며 웹 페이지의 로고를 설정, 파일이 루트에 있어야 함
 - `favicon.ico` 파일을 위치하면 자동으로 로고 생성하므로 `<link />` 작성할 필요가 없음
-- favicon.ico 64 x 64 (px) 또는 32 x 32 또는 16 x 16
-- favicon.png 500 x 500 (px)
+- `favicon.ico` 64 x 64 (px) 또는 32 x 32 또는 16 x 16
+- `favicon.png` 500 x 500 (px)
 
 ```html
 <link rel="icon" href="./favicon.png" />
 ```
 
+#
+
 #### ✔️ BEM
 - HTML 클래스 속성의 작명법
-- **요소__일부분**: Underscore(Lodash) 기호로 요소의 일부분 표시
-- **요소—상태**: Hyphen(Dash) 기호로 요소의 상태 표시
+- **요소__일부분**: `Underscore(Lodash)` 기호로 <u>요소의 일부분</u> 표시
+- **요소—상태**: `Hyphen(Dash)` 기호로 <u>요소의 상태</u> 표시
 
 ```html
 <div class="container">
@@ -145,9 +157,11 @@ new Swiper('.notice-line .swiper-container', {
 <div class="btn btn--error"></div>
 ```
 
+#
+
 
 #### ✔️ padding-top
-> padding-top 속성 사용으로 원하는 비율대로 늘 고정되어 출력하기 가능
+> 원하는 비율대로 늘 고정되어 출력하기 가능
 
 ```css
 .container {
@@ -160,6 +174,9 @@ new Swiper('.notice-line .swiper-container', {
   padding-top: 50%; /* 원하는 비율대로 항상 출력 */
 }
 ```
+
+#
+
 
 #### ✔️ 3D amination
 
@@ -181,7 +198,9 @@ body {
 
 > 어떠한 전환 효과도 없이 삽입했으므로 '뒤' 글자가 뒤집혀서 나타남
 <img src="https://user-images.githubusercontent.com/66389585/126861465-fc950fef-e51a-4c33-bac1-0b1a77f9d135.png" width="200px" height="auto">
----
+
+#
+
 
 ```css
 body {
@@ -204,7 +223,9 @@ body {
 
 > 부모 기준으로 배치했기 때문에 '앞' 박스와 '뒤' 박스가 합쳐져 같은 공간에 나타남
 <img src="https://user-images.githubusercontent.com/66389585/126861576-9fa642ea-3f82-4802-8ff4-dbd62cf43168.png" width="200px">
----
+
+#
+
 
 ```css
 body {
@@ -234,8 +255,9 @@ body {
 ```
 
 <img src="https://user-images.githubusercontent.com/66389585/126861577-c9839e13-df50-4a21-b258-dad662178822.gif" width="200px">
-<br>
----
+
+#
+
 
 ```css
 body {
@@ -274,4 +296,3 @@ body {
 
 > 원근법 추가되어 조금 더 매끄러운 전환 효과 연출 가능
 <img src="https://user-images.githubusercontent.com/66389585/126861579-9ae152fd-12f3-4349-867b-bdd65e70880e.gif" width="200px">
-
