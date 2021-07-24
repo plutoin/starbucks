@@ -18,10 +18,25 @@
 - 구글에서 제공하는 머터리얼 아이콘
 - [Google Fonts](https://fonts.google.com/icons)
 
-### 3️. gsap easing
+### 3️. GSAP & ScrollToPlugin
+**GSAP**
 - 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리
 - 애니메이션의 진행이 매끄럽도록 함
 - [Docs](https://greensock.com/docs/v2/Easing)
+
+**ScrollToPlugin**
+-   스크롤 애니메이션을 지원하는 gsap 플러그인
+- [gsap - Libraries](https://cdnjs.com/libraries/gsap)
+
+```jsx
+gsap.to(요소, 시간, 옵션)
+// 또는
+TweenMax.to(요소, 시간, 옵션)
+
+gsap.to(window, .7, {
+  scrollTo: 0
+});
+```
 
 ### 4️. Swiper
 - 스와이퍼(슬라이드) 라이브러리
@@ -52,7 +67,7 @@ new Swiper('.notice-line .swiper-container', {
 });
 ```
 
-### 5️. **Youtube API**
+### 5️. Youtube API
 - 유튜브 동영상 제어 가능 라이브러리
 - `onYouTubePlayerAPIReady` 은 Youtube IFrame Player API에서 사용하는 이름이기 때문에 다르게 지정하면 동작하지 않음
 - 함수는 전역 등록
@@ -66,6 +81,9 @@ new Swiper('.notice-line .swiper-container', {
 <div id="player"></div>
 
 ```
+### 6. ScrollMagic
+- [ScrollMagic - Libraries](https://cdnjs.com/libraries/ScrollMagic)
+
 
 ## ETC
 
@@ -296,3 +314,27 @@ body {
 
 > 원근법 추가되어 조금 더 매끄러운 전환 효과 연출 가능
 <img src="https://user-images.githubusercontent.com/66389585/126861579-9ae152fd-12f3-4349-867b-bdd65e70880e.gif" width="200px">
+
+
+#
+
+#### ✔️ 특수문자 출력
+
+-   html 코드로 특수문자 출력 가능
+- [Character Entity Reference Chart](https://dev.w3.org/html5/html-author/charref)
+
+```html
+&copy;
+<
+>
+&lt;div&gt;
+
+```
+<img src="https://user-images.githubusercontent.com/66389585/126872483-b40e086f-6c4d-4c3b-9fad-55a5161cce8e.png" width="250px">
+
+#
+
+
+#### ✔️ img 중앙 정렬
+
+-  img 요소가 display: block; + margin: 0 auto; 인 경우 width 속성이 없어도 가운데 정렬 가능
