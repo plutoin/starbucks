@@ -201,7 +201,6 @@ header .main-menu .item:hover .item__name {
   background-color: #2c2a29;
   color: #669900;
   border-radius: 6px 6px 0 0;
-
 }
 header .main-menu .item .item__contents {
   width: 100%;
@@ -794,18 +793,21 @@ footer .menu {
   justify-content: center;
 }
 footer .menu li {
-  
+  position: relative;
 }
-footer .menu li::before{
+footer .menu li::before {
   content: "";
   width: 3px;
   height: 3px;
   background-color: #555;
-  position: absolute; /* 인라인 요소지만 absolute 설정으로 인해 block 요소로 변경됨 */
+  position: absolute; /* 인라인 요소지만 absolute 설정으로 인해 block 요소로 변경 */
   top: 0;
   bottom: 0;
   right: -1px;
   margin: auto;
+}
+footer .menu li:last-child::before {
+  display:none;
 }
 footer .menu li a {
   color: #ccc;
@@ -816,4 +818,37 @@ footer .menu li a {
 }
 footer .menu li a.green {
   color: #669900;
+}
+footer .btn-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+footer .btn-group .btn {
+  font-size: 12px;
+  margin-right: 10px;
+}
+footer .btn-group .btn:last-child {
+  margin-right: 0;
+}
+footer .info {
+  margin-top: 30px;
+  text-align: center;
+}
+footer .info span {
+  margin-right: 20px;
+  color: #999;
+  font-size: 12px;
+}
+footer .info span:last-child {
+  margin-right: 0;
+}
+footer .copyright {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 12px;
+}
+footer .logo {
+  margin: 30px auto 0;  /* 상 중 하 */
 }
