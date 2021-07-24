@@ -74,6 +74,17 @@ new Swiper('.promotion .swiper-container', {
     nextEl: '.promotion .swiper-next'
   }
 });
+new Swiper('.awards .swiper-container', {
+  // direction: 'horizontal' 기본값
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,  // 한 화면에 몇 개의 슬라이드를 보일 것인가
+  navigation: {
+    prevEl: '.awards .swiper-prev',
+    nextEl: '.awards .swiper-next'
+  }
+});
 
 
 const promotionEl = document.querySelector('.promotion');
@@ -113,3 +124,18 @@ function floatingObject(selector, delay, size) {
 floatingObject('.floating1', 1, 15)
 floatingObject('.floating2', .5, 15)
 floatingObject('.floating3', 1.5, 20)
+
+
+const spyEls = document.querySelectorAll('section.scroll-spy')
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEl,  // 보여짐의 여부를 감시할 요소 지정
+      triggerHook: .8 // 화면의 80% 지점에서 보여짐 여부 감시
+    })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller()); // ScrollMagic을 컨트롤러에 할당하여 동작하도록 함 
+  // Scene(): 특정한 요소를 감시하는 옵션을 지정하는 메소드
+  // setClassToggle(): 클래스에 토글을 지정
+  // addTo(): 컨트롤러 추가
+});
