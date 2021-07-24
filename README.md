@@ -10,8 +10,8 @@
 
 ### 1️. reset css
 - css 설정 모두 초기화(뷰포트에 기본적으로 지정되어 있는 margin 값 등의 제거 위함)
-- reset.min.css에서 html 코드 복사
-- min 파일은 다량의 데이터를 압축한 것이므로 일반 reset.css 파일보다 주로 사용
+- `reset.min.css`에서 html 코드 복사
+- min 파일은 다량의 데이터를 압축한 것이므로 일반 `reset.css` 파일보다 주로 사용
 - [reset-css CDN](https://www.jsdelivr.com/package/npm/reset-css)
 
 ### 2️. material icons
@@ -25,7 +25,7 @@
 - [Docs](https://greensock.com/docs/v2/Easing)
 
 **ScrollToPlugin**
--   스크롤 애니메이션을 지원하는 gsap 플러그인
+- 스크롤 애니메이션을 지원하는 gsap 플러그인
 - [gsap - Libraries](https://cdnjs.com/libraries/gsap)
 
 ```jsx
@@ -320,7 +320,7 @@ body {
 
 #### ✔️ 특수문자 출력
 
--   html 코드로 특수문자 출력 가능
+-  html 코드로 특수문자 출력 가능
 - [Character Entity Reference Chart](https://dev.w3.org/html5/html-author/charref)
 
 ```html
@@ -337,4 +337,4 @@ body {
 
 #### ✔️ img 중앙 정렬
 
--  img 요소가 display: block; + margin: 0 auto; 인 경우 width 속성이 없어도 가운데 정렬 가능
+-  img 요소가 `display: block; + margin: 0 auto;` 인 경우 width 속성이 없어도 가운데 정렬 가능
