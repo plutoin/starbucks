@@ -65,7 +65,7 @@ new Swiper('.notice-line .swiper-container', {
 
 ```
 
-> ## ETC
+## ETC
 
 #### ✔️  같은 클래스 이름의 태그 여러 개 만들 때
 - .클래스 이름 * 개수 > 자식 클래스
@@ -145,7 +145,9 @@ new Swiper('.notice-line .swiper-container', {
 <div class="btn btn--error"></div>
 ```
 
+
 #### ✔️ padding-top
+> padding-top 속성 사용으로 원하는 비율대로 늘 고정되어 출력하기 가능
 
 ```css
 .container {
@@ -159,7 +161,7 @@ new Swiper('.notice-line .swiper-container', {
 }
 ```
 
-✔️ **3D amination**
+#### ✔️ 3D amination
 
 ```css
 body {
@@ -177,12 +179,9 @@ body {
 }
 ```
 
-결과
-
+> 어떠한 전환 효과도 없이 삽입했으므로 '뒤' 글자가 뒤집혀서 나타남
 <img src="https://user-images.githubusercontent.com/66389585/126861465-fc950fef-e51a-4c33-bac1-0b1a77f9d135.png" width="200px" height="auto">
-
-- 어떠한 전환 효과도 없이 삽입했으므로 '뒤' 글자가 뒤집혀서 나타남
-
+---
 
 ```css
 body {
@@ -203,12 +202,9 @@ body {
 }
 ```
 
-결과
-
+> 부모 기준으로 배치했기 때문에 '앞' 박스와 '뒤' 박스가 합쳐져 같은 공간에 나타남
 <img src="https://user-images.githubusercontent.com/66389585/126861576-9fa642ea-3f82-4802-8ff4-dbd62cf43168.png" width="200px">
-
-- 부모 기준으로 배치했기 때문에 '앞' 박스와 '뒤' 박스가 합쳐져 같은 공간에 나타남
-
+---
 
 ```css
 body {
@@ -237,10 +233,9 @@ body {
 }
 ```
 
-결과
-
 <img src="https://user-images.githubusercontent.com/66389585/126861577-c9839e13-df50-4a21-b258-dad662178822.gif" width="200px">
-
+<br>
+---
 
 ```css
 body {
@@ -277,8 +272,6 @@ body {
 }
 ```
 
-결과
-
+> 원근법 추가되어 조금 더 매끄러운 전환 효과 연출 가능
 <img src="https://user-images.githubusercontent.com/66389585/126861579-9ae152fd-12f3-4349-867b-bdd65e70880e.gif" width="200px">
 
-- 원근법 추가되어 조금 더 매끄러운 전환 효과 연출 가능
