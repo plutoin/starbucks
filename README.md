@@ -149,25 +149,18 @@ new Swiper('.notice-line .swiper-container', {
 
 ```css
 .container {
-	width: 500px;
-	background-color: royalblue;
+  width: 500px;
+  background-color: royalblue;
 }
 .container .item {
-	width: 100%;
-	height: 0;
-	padding-top: 50%; /* 원하는 비율대로 항상 출력 */
+  width: 100%;
+  height: 0;
+  padding-top: 50%; /* 원하는 비율대로 항상 출력 */
 }
 ```
 
 ✔️ **3D amination**
 
-```html
-<div class="container">
-  <div class="item front">앞</div>
-  <div class="item back">뒤</div>
-</div>
-```
-
 ```css
 body {
   padding: 50px;
@@ -183,6 +176,13 @@ body {
   transform: rotateY(-180deg);
 }
 ```
+
+결과
+
+<img src="https://user-images.githubusercontent.com/66389585/126861465-fc950fef-e51a-4c33-bac1-0b1a77f9d135.png" width="200px" height="auto">
+
+- 어떠한 전환 효과도 없이 삽입했으므로 '뒤' 글자가 뒤집혀서 나타남
+
 
 ```css
 body {
@@ -196,45 +196,58 @@ body {
   font-size: 60px;
 }
 .container .item.front {
-  position: absolute;
+  position: absolute; /* 추가 */
 }
 .container .item.back {
   transform: rotateY(-180deg);
 }
 ```
 
+결과
+
+<img src="https://user-images.githubusercontent.com/66389585/126861576-9fa642ea-3f82-4802-8ff4-dbd62cf43168.png" width="200px">
+
+- 부모 기준으로 배치했기 때문에 '앞' 박스와 '뒤' 박스가 합쳐져 같은 공간에 나타남
+
+
 ```css
 body {
   padding: 50px;
 }
 .container .item {
+  /* 가로 세로 너비 지정 */
   width: 100px;
   height: 100px;
   border: 4px solid red;
   box-sizing: border-box;
   font-size: 60px;
-  backface-visibility: hidden;
+  backface-visibility: hidden; /* 뒷면의 이미지 숨기기 */
 }
 .container .item.front {
   position: absolute;
 }
 .container:hover .item.front {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /* 커서 올리면 180도 회전 */
 }
 .container .item.back {
-  transform: rotateY(-180deg);
+  transform: rotateY(-180deg); 
 }
 .container:hover .item.back {
-  transform: rotateY(0deg);
+  transform: rotateY(0deg); /* 커서 내리면 다시 180도 회전하여 원래 이미지 출력 */
 }
 ```
+
+결과
+
+<img src="https://user-images.githubusercontent.com/66389585/126861577-c9839e13-df50-4a21-b258-dad662178822.gif" width="200px">
+
 
 ```css
 body {
   padding: 50px;
 }
 .container {
-	/* 가로 세로 너비 지정 */
+  /* 가로 세로 너비 지정 */
   width: 100px;
   height: 100px;
   background-color: orange;
@@ -247,7 +260,7 @@ body {
   box-sizing: border-box;
   font-size: 60px;
   backface-visibility: hidden;
-  transition: 1s;
+  transition: 1s; /* 전환 시간 추가 */
 }
 .container .item.front {
   position: absolute;
@@ -263,3 +276,9 @@ body {
   transform: rotateY(0deg);
 }
 ```
+
+결과
+
+<img src="https://user-images.githubusercontent.com/66389585/126861579-9ae152fd-12f3-4349-867b-bdd65e70880e.gif" width="200px">
+
+- 원근법 추가되어 조금 더 매끄러운 전환 효과 연출 가능
