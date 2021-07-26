@@ -6,6 +6,9 @@
 	- 구현 완료일: 2021.07.24
 - [Open Page](https://compassionate-euler-fb0a58.netlify.app/)  
 
+![starbucks](https://user-images.githubusercontent.com/66389585/126978167-fbde971b-51a0-4b1e-9f78-3a760149f445.gif)
+
+
 
 ## ✔️ Libraries
 
