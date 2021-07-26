@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 # ☕️ Starbucks
+=======
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d152624c-1232-41d1-9b61-92a5ad15127f/deploy-status)](https://app.netlify.com/sites/compassionate-euler-fb0a58/deploys)
+
+# ☕️ STARBUCKS
+>>>>>>> 961f7a1132a93079f1ee6dfc6830bb89e64d41a8
 - **스타벅스 홈페이지 클론 코딩**
 	- 구현 시작일: 2021.07.11
 	- 구현 완료일: 2021.07.24
-- [Open Page](https://plutoin.github.io/starbucks/)  
+- [Open Page](https://compassionate-euler-fb0a58.netlify.app/)  
+
+![starbucks](https://user-images.githubusercontent.com/66389585/126978167-fbde971b-51a0-4b1e-9f78-3a760149f445.gif)
+
 
 
 ## ✔️ Libraries
@@ -68,7 +77,7 @@ new Swiper('.notice-line .swiper-container', {
 
 ### 5️. Youtube API
 - 유튜브 동영상 제어 가능 라이브러리
-- `onYouTubePlayerAPIReady` 은 Youtube IFrame Player API에서 사용하는 이름이기 때문에 다르게 지정하면 동작하지 않음
+- `onYouTubePlayerAPIReady` 은 `Youtube IFrame Player API`에서 사용하는 이름이기 때문에 다르게 지정하면 동작하지 않음
 - 함수는 전역 등록
 - [YouTube IFrame Player API](https://developers.google.com/youtube/iframe_api_reference?hl=ko)
 
@@ -88,8 +97,6 @@ new Swiper('.notice-line .swiper-container', {
 
 #### ✔️  같은 클래스 이름의 태그 여러 개 만들 때
 - .클래스 이름 * 개수 > 자식 클래스
-
-#
 
 ```html
 <!-- hero 클래스 안에 image 클래스가 포함된 div 태그 32개 만들려고 할 때 -->
