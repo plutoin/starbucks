@@ -1,14 +1,18 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d152624c-1232-41d1-9b61-92a5ad15127f/deploy-status)](https://app.netlify.com/sites/compassionate-euler-fb0a58/deploys)
 
 # ☕️ STARBUCKS
-- **스타벅스 홈페이지 클론 코딩**
-	- 구현 시작일: 2021.07.11
-	- 구현 완료일: 2021.07.24
+### < 스타벅스 홈페이지 클론 코딩>
+
+🗓️ **작업기간** : 2021. 07. 11 ~ 2021. 07. 24
+
+👨‍💻 **투입인원** : 1명 (개인 프로젝트)
 
 - #### [Open Page](https://compassionate-euler-fb0a58.netlify.app/)  
 - #### [WIKI](https://github.com/plutoin/starbucks/wiki)
 
 <br>
+
+🌱 **스킬 및 사용 툴**
 
 ![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white&max-width=100%)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white)
